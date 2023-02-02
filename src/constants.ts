@@ -15,6 +15,7 @@ interface PasswordStrength {
 export const symbols: StatusCases = 'symbols';
 export const numbers: StatusCases = 'numbers';
 export const characters: StatusCases = 'characters';
+export const minLengthInput: number = 8;
 
 export const statusesList: Array<StatusObject> = [
   {

@@ -11,6 +11,7 @@ export class FormComponent {
   statusesList = constants.statusesList;
   passwordStrength = constants.passwordStrength;
   isShowPassword: boolean = false;
+  isDisabledSubmit: boolean = true;
 
   buttonTitle: string = 'SHOW';
 
@@ -21,11 +22,20 @@ export class FormComponent {
 
   onChangePassword(event: any) {
     this.passwordValue = event.target.value;
-
+    
+    this.checkDisabledSubmit();
     this.checkSpecialSymbols();
     this.checkNumbers();
     this.checkLetters();
     this.checkColors();
+  }
+
+  checkDisabledSubmit() {
+    if ( this.passwordValue.length < constants.minLengthInput ) {
+      this.isDisabledSubmit = true;
+    } else {
+      this.isDisabledSubmit = false;
+    }
   }
 
   checkSpecialSymbols() {
