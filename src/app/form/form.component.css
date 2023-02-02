@@ -1,0 +1,51 @@
+.form {
+    margin-top: 6rem;   
+}
+
+.title {
+    margin-top: 5rem;
+    color: #007bff
+}
+
+hr {
+    border-color: #007bff;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.grey {
+    color: grey;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+}
+
+.custom {
+    position: relative;
+    width: 2.5rem;
+    border-color: #ced4da;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.custom svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto auto auto auto;
+}
